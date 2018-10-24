@@ -1,0 +1,133 @@
+\PassOptionsToPackage{hyphens}{url}
+\documentclass[compress,aspectratio=169]{beamer}
+
+\usetheme{Reading}
+
+\usepackage[official]{eurosym}
+\usepackage{multirow}
+\usepackage{units}
+
+% \usepackage{todonotes} % if you want to make annotations
+
+% Where are graphics to be found
+\graphicspath{{../assets/}{./fig/}}
+
+
+\title{Professional Talks with LaTeX}
+\subtitle{-- Work in progress -- }
+\authorURL{https://hps.vi4io.org}
+\author{\underline{Julian M. Kunkel}, Author 2, Author 3} % Always mark the first author
+
+% if you want to use a logo in the footer:
+\authorFooter{Julian M. Kunkel \hspace{0.3cm} \includegraphics[height=1em]{hps-footer}}
+\institute{Computer Science Department}
+\venue{The name of the venue}
+
+\groupLogo{\includegraphics[width=2cm]{hps-logo}}
+\date{2018-05-08}
+\titleLogo{\includegraphics[width=16.5cm,height=3cm]{background}
+% can span the whole width
+\\[-1em]
+% If you use images from other sources, always give the reference and license:
+\tiny \HREFColor{darkgray}{http://hps.vi4io.org}{Image under CC-BY-4 license}
+}
+% Members of the university may use:
+% http://www.reading.ac.uk/imagebank
+
+% The number of slides, if you want to provide them
+%\slideNumber{22}
+
+\newcommand{\comment}[1]{}
+
+\begin{document}
+
+\begin{frame}[plain]
+	\titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+	\tableofcontents[subsectionstyle=hide/hide]
+\end{frame}
+
+
+\section{Introduction}
+
+\subsection{Motivation}
+\begin{frame}{Motivation}
+	\begin{block}{Goal: Professional presentations}
+		\begin{itemize}
+				\item Logical structure
+				\item Good design
+				\item Self-speaking slides
+		\end{itemize}
+	\end{block}
+
+	\begin{block}{Purpose of this slide deck}
+		\begin{itemize}
+			\item Illustrates the use of LaTeX Beamer
+			\item Provides an unofficial template for Reading staff
+				%\begin{itemize}
+					%\item Students: Please use the template ReadingStudent due to the copyright of the first page
+				%\end{itemize}
+			\item Describes principles how to design presentations
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\section{Structure}
+\sectionIntro
+
+\subsection{Subsections}
+\begin{frame}{Subsections}
+\begin{itemize}
+	\item Subsections help to structure the talk
+	\item Logical bundling of topics
+	\item The template renders the color of the active subsection differently
+\end{itemize}
+\end{frame}
+
+
+\section{Layout}
+\sectionIntro
+
+\begin{frame}{Layout}
+\begin{itemize}
+	\item xx
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Graphics and Figures}
+\begin{figure}[tbp]
+	\centering
+	\subfloat[Subcaption A\label{fig:pm}]{\includegraphics[width=4cm]{hps-logo}}
+	\qquad % create some space
+	\subfloat[Subcaption B\label{fig:emp}]{\includegraphics[width=4cm]{hps-logo}}
+	\caption{Some caption}
+\end{figure}
+\end{frame}
+
+\section{Summary}
+
+\begin{frame}{Summary}
+	\begin{itemize}
+		\item LaTeX is easy to use and produces appealing presentations
+		\item Structure and layout
+	\end{itemize}
+\end{frame}
+
+\backupbegin
+
+\section{Backup Slides}
+\begin{frame}{Backup Slides}
+	\begin{itemize}
+		\item It is good practice to prepare backup slides
+		\item Benefit:
+		\begin{itemize}
+			\item If you talk too slow, you may show some extra information
+			\item They may answer detailed questions
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\backupend
+\end{document}

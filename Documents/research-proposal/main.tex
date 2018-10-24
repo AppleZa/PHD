@@ -1,0 +1,83 @@
+\documentclass{ResearchProposal} % The class file specifying the document structure
+
+\thesistitle[Optional Short Title]{MyThesis}
+\author{MyFirstname \textsc{MyLastname}}
+\supervisor{Dr. Julian \textsc{Kunkel}} % Your prospect supervisor's name (if known already), leave empty if you are looking for one
+\university{University of Reading} % The university you apply for
+\department{Department of Computer Science} % The department's name
+\group{\href{http://hps.vi4io.org}{High-Performance Storage}} % The research area/group
+\keywords{X, Y, Z} % Use a few describing the thesis better
+
+
+\addbibresource{example.bib}
+
+\startMain
+
+\textit{Please also check \url{http://www.reading.ac.uk/computer-science/dcs-PhD-programmes.aspx}.}
+
+
+\section{Motivation}
+\textit{What makes the research topic of interest and importance}
+
+
+\section{Research question}
+\textit{The main research question(s) that you want to address.}
+
+\textit{Provide one sentence that gives an overview of the topic, how would you describe your thesis to a computer scientist?}
+
+Example: The goal of this thesis is to understand and optimize the performance behavior for large-scale data accesses in the domain of climate and weather.
+
+\textit{Now split the research goal into questions}
+
+\smallskip
+
+This covers the research questions:
+\begin{enumerate}
+	\item What workflows are limited by I/O?
+	\item Which I/O operations are typically performed?
+	\item Which optimizations are beneficial for the workflows on HPC systems?
+\end{enumerate}
+
+
+\section{Related work}
+\textit{How your thinking builds on any previous work.}
+
+\medskip
+
+Relevant work can be classified into: a) LaTeX studies, b) performance analysis in HPC, ....
+
+\paragraph{LaTeX studies.} It has been shown that blabla \citep{lamport1994latex}.
+
+\paragraph{Performance analysis.}
+
+\section{Research methodology}
+\textit{What research methodology or techniques you may need to use}
+
+\section{Required infrastructure}
+\textit{What facilities you are likely to require to conduct your research.}
+
+
+\medskip
+
+This research requires a supercomputer with more than 100 nodes to run experiments on.
+
+\section{Workplan}
+\textit{How the research can be completed in the time available. Provide a rough sketch over the runtime of your PhD}
+
+The following sketches the workplan for the different years of the PhD.
+
+\paragraph{First year:} setup of work environment, researching related work, writing the chapters introduction and related work of the thesis.
+
+\paragraph{Second year:}
+
+\paragraph{Third year:}
+
+\proposalAppendix
+
+Add here any appendix, if needed
+
+\printbibliography[heading=bibintoc]
+
+\label{LastPage}
+
+\end{document}

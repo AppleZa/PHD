@@ -1,0 +1,50 @@
+\documentclass[12pt,english]{reading-letter}
+\usepackage[utf8]{inputenc}
+
+\graphicspath{{../assets/}{./fig/}}
+\DeclareGraphicsExtensions{.png,.pdf,.jpg,.jpeg}
+
+% to add a box around the address => useful when using a letter with a window
+\fenstermarken
+
+\Name                {Dr. Julian M. Kunkel}
+\Building           {Polly Vacher}
+\Street             {}
+\POBox              {}
+\Qualification      {}
+\JobTitle           {Lecturer}
+\Unit               {Computer Science Department}
+\HTTP               {https://hps.vi4io.org}
+\HTTPUnit           {http://www.reading.ac.uk/computer-science}
+\Campus             {Whiteknights}
+\City               {Reading RG6 6AY}
+\Phone              {+44 118 378 8218}
+\Country            {UK}
+\EMail              {j.m.kunkel@reading.ac.uk}
+%\Reference          {Ref:}
+
+
+\renewcommand{\blztext}{\footnotesize BIC}
+\renewcommand{\kontotext}{\footnotesize IBAN}
+
+
+%If you want to embed a signature into the PDF:
+%\Signature        {\includegraphics{unterschrift.png}\\ Dr. Julian M. Kunkel}
+\Signature        {Dr. Julian M. Kunkel}
+
+\Adress             {Bla\\Where\\x}
+
+\Subject            {Letter of recommendation}
+\Date               {\today}
+\Opening            {Dear Madam and Sir,}
+\Greeting           {Cordially}{1cm}
+
+\begin{document}
+\begin{readingLetter}
+% for longer letters:
+% \setlength{\parindent}{15pt}
+
+This is a trivial letter.
+
+\end{readingLetter}
+\end{document}
