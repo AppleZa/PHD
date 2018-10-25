@@ -1,12 +1,12 @@
 \documentclass{ResearchProposal} % The class file specifying the document structure
 
 \thesistitle[Optional Short Title]{MyThesis}
-\author{MyFirstname \textsc{MyLastname}}
+\author{Kyle \textsc{ Spindler}}
 \supervisor{Dr. Julian \textsc{Kunkel}} % Your prospect supervisor's name (if known already), leave empty if you are looking for one
 \university{University of Reading} % The university you apply for
 \department{Department of Computer Science} % The department's name
 \group{\href{http://hps.vi4io.org}{High-Performance Storage}} % The research area/group
-\keywords{X, Y, Z} % Use a few describing the thesis better
+\keywords{Microservice, Serverless, HPC} % Use a few describing the thesis better
 
 
 \addbibresource{example.bib}
@@ -17,13 +17,24 @@
 
 
 \section{Motivation}
-\textit{What makes the research topic of interest and importance}
+Software Architecture invovles considering multiple characteristics such as separation of concerns, quality attributes (maintainability, scalability, loose coupling, high cohesion etc...) and architectural styles. Some architecture styles are more suited for performance while others are better at maintainability and loose coupling like microservices. Microservices is a very popular architecture that is used in many domains because of the benefits it offers.
+
+\medskip
+
+Scientic codes suffer from good software engineering practices
 
 
 \section{Research question}
 \textit{The main research question(s) that you want to address.}
 
-\textit{Provide one sentence that gives an overview of the topic, how would you describe your thesis to a computer scientist?}
+Understand the impact of modern day software architectures (microservices, event driven) has on HPC and particularly the climate/weather domain 
+
+The goal of this thesis is to see if HPC applications and storage systems can be redeveloped using modern day software architecture such as microservices with minimal or no overhead while gaining the benefits from the loosely coupled architecture.
+
+\begin{enumerate}
+	\item What parts of the HPC application could benefit from microservices or other software architectures?
+	\item What 
+\end{enumerate}
 
 Example: The goal of this thesis is to understand and optimize the performance behavior for large-scale data accesses in the domain of climate and weather.
 
