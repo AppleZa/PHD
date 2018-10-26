@@ -5,23 +5,22 @@
 \supervisor{Dr. Julian \textsc{Kunkel}} % Your prospect supervisor's name (if known already), leave empty if you are looking for one
 \university{University of Reading} % The university you apply for
 \department{Department of Computer Science} % The department's name
-\group{\href{http://hps.vi4io.org}{High-Performance Storage}} % The research area/group
-\keywords{Microservice, Serverless, HPC} % Use a few describing the thesis better
+\group{\href{http://hps.vi4io.org}{High-Performance, Storage Software Architectures}} % The research area/group
+\keywords{Microservice, Serverless, HPC, Storage} % Use a few describing the thesis better
 
 
 \addbibresource{example.bib}
 
 \startMain
 
-\textit{Please also check \url{http://www.reading.ac.uk/computer-science/dcs-PhD-programmes.aspx}.}
-
 
 \section{Motivation}
+
 Software Architecture invovles considering multiple characteristics such as separation of concerns, quality attributes (maintainability, scalability, loose coupling, high cohesion etc...) and architectural styles. Some architecture styles are more suited for performance while others are better at maintainability and loose coupling like microservices. Microservices is a very popular architecture that is used in many domains because of the benefits it offers.
 
 \medskip
 
-Scientic codes suffer from good software engineering practices. HPC and store applications are typically tightly coupled to utilize the available resources efficiently. While it is claimed that this provides the best performance, the benefit and drawbacks of alternative software architectures for HPC software is not thoroughly investigated. Microservices, for example, provide a scalable architecture and ease the software development process by providing separation of concerns by applying techniques from Domain Driven Design. When deciding a software architecture not only performance and scalability matters, but also flexibility and maintainability. 
+Scientic codes suffer from good software engineering practices. HPC and store applications are typically tightly coupled to utilize the available resources efficiently. While it is claimed that this provides the best performance, the benefit and drawbacks of alternative software architectures for HPC software is not thoroughly investigated. Microservices, for example, provide a scalable architecture and ease the software development process by providing separation of concerns by applying techniques from Domain Driven Design. When deciding a software architecture not only performance and scalability matters, but also flexibility and maintainability of the software. 
 
 \medskip
 
@@ -29,63 +28,70 @@ In this regard, the HPC community struggles to recruit sufficient developesr to 
 
 
 \section{Research question}
-\textit{The main research question(s) that you want to address.}
 
 Understand the impact of modern day software architectures (microservices, event driven) has on HPC and particularly the climate/weather domain 
 
 The goal of this thesis is to see if HPC applications and storage systems can be redeveloped using modern day software architecture such as microservices with minimal or no overhead while gaining the benefits from the loosely coupled architecture.
 
 \begin{enumerate}
-	\item What parts of the HPC application could benefit from microservices or other software architectures?
-	\item What 
-\end{enumerate}
-
-Example: The goal of this thesis is to understand and optimize the performance behavior for large-scale data accesses in the domain of climate and weather.
-
-\textit{Now split the research goal into questions}
-
-\smallskip
-
-This covers the research questions:
-\begin{enumerate}
-	\item What workflows are limited by I/O?
-	\item Which I/O operations are typically performed?
-	\item Which optimizations are beneficial for the workflows on HPC systems?
+	\item What parts of the HPC and Storage Solution could benefit from microservices or other software architectures?
+	\item How to make HPC and Storage Solution more maintainable, scaleable, loosely couple, more cohesion and more independent?
+	\item What areas within the HPC and Storage Solution that could improve it's efficiency through the use of Software Architecture?
 \end{enumerate}
 
 
 \section{Related work}
-\textit{How your thinking builds on any previous work.}
+
+Microservices are becoming very popular in today's world due to the main benefits and problems it solves. The application of microservices are used in many domains where maintainability, scalability and resilience is very important as opose to scientific applications that requires performance is their primary attribute. Although microservices are found in HPC applications the majority of research found has applied microservices in storage, pre/post processing, middleware, scheduling, workflow and caching services that wrap around the main HPC processing.Also storage services like iRODS harness microservices, however, these systems are not as performance-criticial as a typical HPC application which might be one of the reasons why iRODS is not used in HPC environments. 
 
 \medskip
 
 Relevant work can be classified into: a) LaTeX studies, b) performance analysis in HPC, ....
 
-\paragraph{LaTeX studies.} It has been shown that blabla \citep{lamport1994latex}.
 
-\paragraph{Performance analysis.}
+\paragraph{Caching Microservices.} Microservices were used as a distributed interpolation-based memoization cache. \citep{Jenkins2017}.
+
+\paragraph{Containers for High Performance Computing.} Thoughts on how containers may or may not be used in HPC. Containers are commonly used in microservice architectures. \citep{Joab2018}.
+
+\paragraph{Distributed Virtual Machine Cloud Microservice for HPC:SPMD Applications} How Virtual Machines were used in a cloud based microservice architecture in an HPC environment:SPMD. \citep{Fatema2017}.
+
+\paragraph{Scheduling Scientific Workflows in HPC} How to dynamically approach to scheduling reconfigurable scientific workflows in heterogeneous HPC environments. \citep{Cheptsov2016}.
+
+\paragraph{Middleware cloud based microservice in HPC} Shows how middleware has made use of microservices within a HPC environment. \citep{Benchara2016}.
 
 \section{Research methodology}
-\textit{What research methodology or techniques you may need to use}
+Firstly, I must understand the limitations and performance characteristics of alternatives software architectures. This is performed in two steps:
+\begin{enumerate}
+	\item Benchmarking of microservice communication protocols in contracts to HPC communication path.
+	\item Modelling of systems with different hardware / software architectures
+\end{enumerate}
 
-\section{Required infrastructure}
-\textit{What facilities you are likely to require to conduct your research.}
+Next, from HPC use cases and scenarios must be derived and characterised with their pros/cons and performance chatacterisitcs.
 
+To prove the expectations, a prototype of selected applications must be made and compared to native applications. This may involve to adjust an existing package or create a new application that behaves similar but has limited feature set (so called mini-app).
 
 \medskip
 
-This research requires a supercomputer with more than 100 nodes to run experiments on.
+An orthogonal aspect is to conduct surveys with scientists / scientific developers to understand the reason for the architectural choices made and identify strategies to adjust the existing practice.
+
+\section{Required infrastructure}
+
+Access to HPC systems to benchmark existing software and the developed prototypes. Access to the scientific network to foster discussions and explore with scientists in co-development the benefits of the prototypes.
+
 
 \section{Workplan}
-\textit{How the research can be completed in the time available. Provide a rough sketch over the runtime of your PhD}
 
 The following sketches the workplan for the different years of the PhD.
 
-\paragraph{First year:} setup of work environment, researching related work, writing the chapters introduction and related work of the thesis.
+\paragraph{First year:} Setup of work environment, researching related work, Start Investigating system under study, send out surveys, analyise system under study, writing the chapters introduction and related work of the thesis.
 
-\paragraph{Second year:}
+\paragraph{Second year:} Continue researching related work, Add more details in thesis based on previous findings, Start Implementing Prototype. 
 
-\paragraph{Third year:}
+\paragraph{Third year:} Continue Implementing Prototype, Add Quality Assurance and testing to prototype, continue researching, add implementation details to thesis
+
+\paragraph{Fourth year:} Run Benchmark Tests, Adjust Prototype, add benchmark findings into thesis, provide critical thinking.
+
+\paragraph{Fifth year:} Finalise thesis, Prepare thesis for final stages and delivery
 
 \proposalAppendix
 
